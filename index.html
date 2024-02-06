@@ -3,10 +3,6 @@
 
 <head>
     <title>Login</title>
-    <script>
-        // Javascript
-        console.log("Hello World");
-    </script>
 </head>
 
 <body>
@@ -15,9 +11,19 @@
         <input type="text" placeholder="Username" id="txtUsername">
         <input type="text" placeholder="Password" id="txtPassword">
         <div style="margin-top: 1rem;">
-            <button id="btnlogin">Login</button>
+            <button id="btnLogin">Login</button>
         </div>
     </div>
 </body>
+
+<script>
+    // Javascript
+    console.log("Hello World");
+    // let / var
+    let buttonLogin = document.querySelector('#btnLogin');
+    buttonLogin.onclick = function () {
+        alert("Login successfully.")
+    };
+</script>
 
 </html>
