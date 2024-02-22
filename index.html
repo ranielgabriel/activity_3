@@ -3,13 +3,44 @@
 
 <head>
     <title>Login</title>
+    <style>
+        /* Pang id */
+        #divContainer {
+            text-align: center;
+        }
+
+        /* Pang class name */
+        .redText {
+            color: rgb(255, 0, 0);
+            background-color: #bebebe;
+        }
+
+        .redText:hover {
+            color: blue;
+        }
+
+        /* input {
+            text-align: right;
+        } */
+
+        #btnLogin {
+            font-size: large;
+            color: #261;
+        }
+
+        #btnLogin:hover {
+            cursor: pointer;
+            font-size: x-large;
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div id="divContainer">
         <h1>Login</h1>
-        <input type="text" placeholder="Username" id="txtUsername">
-        <input type="text" placeholder="Password" id="txtPassword">
+        <input type="text" placeholder="Username" id="txtUsername" class="redText">
+        <input type="password" placeholder="Password" id="txtPassword" class="redText">
         <div style="margin-top: 1rem;">
             <button id="btnLogin">Login</button>
         </div>
